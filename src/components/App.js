@@ -41,7 +41,10 @@ class App extends React.Component {
     let pets = [...this.state.pets];
     let petIndex = pets.findIndex((pet) => pet.id == id);
     pets[petIndex].isAdopted = true;
+
+    // this.state.pets[petIndex].isAdopted = true
     this.setState({
+      // pets: this.state.pets,
       pets: pets,
     });
   };
